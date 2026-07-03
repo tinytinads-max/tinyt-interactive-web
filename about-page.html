@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="curtain">
+
+    </div>
+    <div class="main">
+        <h2><b>tinyt</b>    Interactive</h2>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+    <nav class="menu" id="menu">
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="./about-page.html">ABOUT US</a></li>
+        <li><a href="./service.html">SERVICES</a></li>
+        <li><a href="#">OUR WORK</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+    <div class="header-container"><header class="header">
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header></div>
+ <div class="container">
+
+    <!-- Top Left Menu -->
+    <header class="header">
+        
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+
+        <div class="left-side">
+
+            <div class="left-line"><img src="./IMAGES/logo-sm.png" style="position: relative; left: -33px; top: 250px;"></div>
+
+            <span class="tag">About Us</span>
+
+            <h1>
+                We are<br>
+                Creators
+            </h1>
+
+            <div class="small-line"></div>
+
+        </div>
+
+        <div class="right-side">
+
+            <div class="right-line"></div>
+
+            <p>
+              Tinyt interactive is a creative advertising agency driven by a team of enthusiastic, passionate, and innovative professionals. We believe in smart work, fresh ideas, and meaningful collaborations that help brands stand out in a competitive world.
+
+Our mission is simple: to help your business grow and reach audiences across the globe through impactful branding, creative advertising, and strategic marketing solutions.
+
+At Tiny Interactive, we combine creativity with purpose to build strong brand identities, create memorable campaigns, and deliver results that matter.
+<br>
+
+
+<b>Yeah..! Ad agency.. Nothing more ;)</b>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Bottom Content -->
+    <section class="bottom-section">
+
+        <div class="box">
+            <div class="number">/01</div>
+
+            <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="box">
+            <div class="number">/02</div>
+
+            <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+            </p>
+        </div>
+
+    </section>
+
+</div>
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+    document.querySelector(".menu-toggle").classList.toggle("active");
+}  
+</script>
+
+</body>
+<style>
+/*=========================
+GLOBAL
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Mulish',sans-serif;
+    background:#aaabaf;
+    color:#222;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:min(92%,1200px);
+    margin:auto;
+}
+
+/*=========================
+HEADER
+==========================*/
+
+.main{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:30px;
+}
+
+.main h2{
+    font-size:28px;
+}
+
+/*=========================
+ABOUT SECTION
+==========================*/
+
+.about-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+    padding:70px 0;
+}
+
+.left-side{
+    flex:1;
+    position:relative;
+}
+
+.right-side{
+    flex:1;
+}
+
+.left-line{
+    position:absolute;
+    left:-45px;
+    top:0;
+    width:1px;
+    height:260px;
+    background:#777;
+}
+
+.left-line img{
+    position:absolute;
+    left:-34px;
+    bottom:-30px;
+    width:65px;
+}
+
+.tag{
+    display:inline-block;
+    background:#222;
+    color:#fff;
+    padding:10px 18px;
+    margin-bottom:35px;
+}
+
+.left-side h1{
+    font-size:clamp(42px,6vw,72px);
+    line-height:1;
+    font-weight:300;
+}
+
+.small-line{
+    width:60px;
+    height:1px;
+    background:#555;
+    margin-top:35px;
+}
+
+.right-line{
+    width:60px;
+    height:1px;
+    background:#555;
+    margin-bottom:30px;
+}
+
+.right-side p{
+    font-size:18px;
+    line-height:2;
+    color:#444;
+}
+
+/*=========================
+BOTTOM SECTION
+==========================*/
+
+.bottom-section{
+    display:flex;
+    gap:40px;
+    padding:60px 0;
+    border-top:1px solid #888;
+}
+
+.box{
+    flex:1;
+    display:flex;
+    gap:20px;
+}
+
+.number{
+    font-size:48px;
+    font-weight:300;
+    min-width:90px;
+}
+
+.box p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.divider{
+    width:1px;
+    background:#888;
+}
+
+/*=========================
+MENU
+==========================*/
+
+.menu-toggle{
+    position:fixed;
+    top:25px;
+    left:25px;
+    z-index:1001;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#000;
+    margin:6px 0;
+    transition:.4s;
+}
+
+.menu{
+    position:fixed;
+    top:-100%;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#2f2f2f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.5s;
+    z-index:1000;
+}
+
+.menu.active{
+    top:0;
+}
+
+.menu ul{
+    list-style:none;
+    width:100%;
+    text-align:center;
+}
+
+.menu ul li a{
+    display:block;
+    padding:18px;
+    color:#fff;
+    text-decoration:none;
+    font-size:clamp(24px,5vw,45px);
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu ul li a:hover{
+    color:#aaa;
+}
+
+.menu-toggle.active span{
+    background:#fff;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:rotate(45deg) translate(6px,6px);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:rotate(-45deg) translate(6px,-6px);
+}
+
+/*=========================
+TABLET
+==========================*/
+
+@media(max-width:992px){
+
+.about-section{
+    flex-direction:column;
+    text-align:center;
+}
+
+.left-line{
+    display:none;
+}
+
+.right-line,
+.small-line{
+    margin:auto;
+    margin-bottom:25px;
+}
+
+.bottom-section{
+    flex-direction:column;
+}
+
+.divider{
+    display:none;
+}
+
+}
+
+/*=========================
+MOBILE
+==========================*/
+
+@media(max-width:768px){
+
+.main{
+    justify-content:right;
+    padding-top:20px;
+}
+
+.main h2{
+    font-size:22px;
+}
+
+.about-section{
+    gap:40px;
+    padding:40px 0;
+}
+
+.tag{
+    font-size:14px;
+}
+
+.right-side p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.box{
+    flex-direction:column;
+    text-align:center;
+}
+
+.number{
+    min-width:auto;
+    font-size:40px;
+}
+
+.menu-toggle{
+    top:18px;
+    left:18px;
+}
+
+.menu ul li a{
+    font-size:28px;
+}
+
+}
+
+/*=========================
+SMALL MOBILE
+==========================*/
+
+@media(max-width:480px){
+
+.container{
+    width:90%;
+}
+
+.left-side h1{
+    font-size:40px;
+}
+
+.right-side p{
+    font-size:15px;
+}
+
+.menu ul li a{
+    font-size:24px;
+    padding:16px;
+}
+
+.number{
+    font-size:34px;
+}
+
+}
+
+</style>
+</html>

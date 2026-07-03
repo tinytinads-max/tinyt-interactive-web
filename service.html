@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What We Do</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Mulish', sans-serif;
+background:#aaabaf;
+overflow-x:hidden;
+color:#222;
+}
+
+/* Background Shapes */
+
+/* body:before{
+content:"";
+position:fixed;
+top:-250px;
+right:-180px;
+width:900px;
+height:900px;
+border-radius:50%;
+
+z-index:-3;
+}
+
+body:after{
+content:"";
+position:fixed;
+bottom:-300px;
+right:-250px;
+width:900px;
+height:900px;
+border-radius:50%;
+
+z-index:-3;
+} */
+
+/* Wrapper */
+.wrapper{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto;
+    padding:150px 40px 60px;
+    display:flex;
+    gap:60px;
+    align-items:flex-start;
+}
+/* Sidebar */
+
+.sidebar{
+width:120px;
+min-width:120px;
+/* height:840px; */
+/* background:rgba(255,255,255,.18); */
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+align-items:center;
+padding:45px 0;
+}
+
+.sidebar .line{
+width:1px;
+height:500px;
+background:#777;
+}
+
+.sidebar .logo{
+width:66px;
+height:66px;
+border-radius:50%;
+background:rgba(255,255,255,.4);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+}
+
+/* Content */
+
+.content{
+flex:1;
+margin: 50px 0 0 0;
+}
+
+.tag{
+display:inline-block;
+background:#222;
+color:#fff;
+padding:10px 10px;
+/* border-radius:6px; */
+font-size:14px;
+margin-bottom:25px;
+}
+
+h1{
+font-size:72px;
+font-weight:300;
+margin-bottom:30px;
+font-family: 'Mulish', sans-serif;
+}
+
+.small-line{
+width:70px;
+height:1px;
+background:#444;
+margin-bottom:35px;
+}
+
+.subtitle{
+font-size:14px;
+color:#444;
+max-width:620px;
+line-height:1.5;
+margin-bottom:90px;
+}
+
+/* Services */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(180px,1fr));
+    gap:30px;
+}
+
+.service{
+padding-right:40px;
+padding-left:10px;
+border-right:1px solid rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.service:last-child{
+border-right:none;
+}
+
+.service:hover{
+transform:translateY(-8px);
+}
+
+.icon{
+width: 100px;
+height:100px;
+border-radius:50%;
+background:rgba(255,255,255,.25);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:52px;
+margin-bottom:30px;
+}
+
+.service h3{
+font-size:18px;
+margin-bottom:22px;
+}
+
+.service hr{
+width:45px;
+border:none;
+height:1px;
+background:#444;
+margin-bottom:25px;
+}
+
+.service p{
+font-size:17px;
+line-height:1.8;
+color:#333;
+margin-bottom:45px;
+}
+
+.learn{
+display:inline-flex;
+align-items:center;
+gap:18px;
+font-size:16px;
+text-decoration:none;
+color:#111;
+font-weight:500;
+}
+
+.learn i{
+transition:.3s;
+}
+
+.learn:hover i{
+transform:translateX(8px);
+}
+
+/* ==========================================================
+   1920px
+========================================================== */
+
+@media screen and (min-width:1600px){
+
+.wrapper{
+    max-width:1700px;
+    padding:170px 70px 70px;
+}
+
+.content{
+    margin-top:40px;
+}
+
+.sidebar{
+    width:120px;
+}
+
+.sidebar .line{
+    height:520px;
+}
+
+h1{
+    font-size:76px;
+}
+
+.subtitle{
+    font-size:18px;
+    max-width:700px;
+}
+
+.services{
+    grid-template-columns:repeat(5,1fr);
+}
+
+.service{
+    padding:0 20px;
+}
+
+.icon{
+    width:105px;
+    height:105px;
+    font-size:48px;
+}
+
+.service h3{
+    font-size:20px;
+}
+
+}
+
+
+/* ==========================================================
+   1366px
+========================================================== */
+
+@media screen and (min-width:992px) and (max-width:1599px){
+
+.wrapper{
+    max-width:1350px;
+    padding:140px 35px 50px;
+    gap:50px;
+}
+
+.sidebar{
+    width:100px;
+    min-width:100px;
+}
+
+.sidebar .line{
+    height:430px;
+}
+
+.content{
+    margin-top:20px;
+}
+
+h1{
+    font-size:60px;
+}
+
+.subtitle{
+    font-size:16px;
+    margin-bottom:60px;
+}
+
+.services{
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+.service{
+    padding:0 15px;
+}
+
+.icon{
+    width:85px;
+    height:85px;
+    font-size:40px;
+}
+
+.service h3{
+    font-size:18px;
+}
+
+}
+
+
+/* ==========================================================
+   TABLET 768-991
+========================================================== */
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+.wrapper{
+    padding:120px 30px 40px;
+    display:block;
+}
+
+.sidebar{
+    display:none;
+}
+
+.content{
+    margin:0;
+}
+
+.tag{
+    font-size:13px;
+}
+
+h1{
+    font-size:48px;
+}
+
+.subtitle{
+    font-size:16px;
+    max-width:100%;
+    margin-bottom:50px;
+}
+
+.services{
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.service{
+    border:none;
+    padding:20px;
+    text-align:center;
+    background:rgba(255,255,255,.15);
+}
+
+.icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 20px;
+    font-size:36px;
+}
+
+.service hr{
+    margin:20px auto;
+}
+
+.main{
+    justify-content:center;
+    margin-left:0;
+}
+
+.main h2{
+    font-size:22px;
+}
+
+.menu ul li a{
+    font-size:34px;
+}
+
+}
+
+
+/* ==========================================================
+   MOBILE 320-767
+========================================================== */
+
+@media screen and (max-width:767px){
+
+.wrapper{
+    padding:90px 20px 30px;
+    display:block;
+}
+
+.sidebar{
+    display:none;
+}
+
+.content{
+    margin:0;
+}
+
+.tag{
+    font-size:12px;
+    padding:8px 12px;
+}
+
+h1{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.small-line{
+    margin-bottom:20px;
+}
+
+.subtitle{
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.services{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.service{
+    border:none;
+    padding:25px;
+    text-align:center;
+    background:rgba(255,255,255,.15);
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    margin:0 auto 18px;
+    font-size:30px;
+}
+
+.service hr{
+    margin:15px auto;
+}
+
+.main{
+    justify-content:center;
+    margin-left:0;
+}
+
+.main h2{
+    font-size:18px;
+}
+
+.menu-toggle{
+    top:20px;
+    left:20px;
+}
+
+.menu ul li a{
+    font-size:26px;
+    padding:18px;
+}
+
+}
+/* Black Curtain Animation */
+.curtain{
+    position: fixed;
+    inset: 0;
+    background: #0f0f0fd3;
+    z-index: 99999;
+    animation: openCurtain 1s ease-in-out forwards;
+}
+
+@keyframes openCurtain{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+/* Black Curtain Animation */
+/* MENU ICON */
+
+.menu-toggle{
+    position:fixed;
+    top:30px;
+    left:30px;
+    z-index:1001;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#fff;
+    margin:6px 0;
+    transition:.4s;
+}
+
+/* FULL WIDTH MENU */
+
+.menu{
+    position:fixed;
+    top:-100%;
+    left:0;
+    width:100%;
+    background:#2f2f2f;
+    transition:.5s;
+    z-index:1000;
+}
+
+.menu.active{
+    top:0;
+}
+
+.menu ul{
+    list-style:none;
+    text-align:center;
+}
+
+/* .menu ul li{
+    border-bottom:1px solid rgba(255,255,255,.1);
+} */
+
+.menu ul li a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:22px;
+    font-size:45px;
+    letter-spacing:1px;
+    transition:.3s;
+  
+}
+/* dropdown menu */
+.menu{
+    position:fixed;
+    top:-100vh;
+    left:0;
+    width:100%;
+    height:100vh;    
+    background:#2f2f2f;
+    transition:.5s;
+    z-index:1000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.menu.active{
+    top:0;
+}
+
+.menu ul{
+    list-style:none;
+    width:100%;
+    text-align:center;
+}
+
+/* .menu ul li{
+    border-bottom:1px solid rgba(255,255,255,.15);
+} */
+
+.menu ul li a{
+    display:block;
+    padding:23px;
+    color:#fff;
+    text-decoration:none;
+    font-size:45px;
+    font-weight:bold;
+    letter-spacing:2px;
+    transition:.3s;
+
+}
+
+ .menu ul li a:hover{
+    color: #999;
+    transform: translateX(10px);
+} 
+/* 
+.dropdown a:hover{
+    color: #999;
+    transform: translateX(10px);
+} */
+
+.menu-toggle.active span:nth-child(1){
+    transform:rotate(45deg) translate(6px,6px);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:rotate(-45deg) translate(7px,-7px);
+}
+.menu-toggle span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#000;
+    margin:6px 0;
+    transition:.4s;
+}
+.menu-toggle.active span{
+    background:#fff;
+}
+/* dropdown menu */
+.main {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 40px;
+    top:40px;
+    gap:20px;
+    position: relative;
+    z-index: 500;
+}
+
+
+</style>
+</head>
+
+<body>
+     <div class="curtain">
+
+    </div>
+    
+    </div>
+        <div class="main">
+        <h2><b>tinyt</b>    Interactive</h2>
+    </div>
+
+   <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+    <nav class="menu" id="menu">
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="./about-page.html">ABOUT US</a></li>
+        <li><a href="./service.html">SERVICES</a></li>
+        <li><a href="#">OUR WORK</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<div class="wrapper">
+
+<div class="sidebar">
+
+<div class="line"></div>
+
+<div class="logo">
+<img src="./IMAGES/logo-sm.png">
+</div>
+
+</div>
+
+<div class="content">
+
+<div class="tag">Service</div>
+
+<h1>What We Do?</h1>
+
+<div class="small-line"></div>
+
+<p class="subtitle">
+Our creative solutions help brands grow, connect and succeed.
+</p>
+
+<div class="services">
+
+<div class="service">
+
+<div class="icon">
+<i class="fa-solid fa-bullseye"></i>
+</div>
+
+<h3>Branding</h3>
+
+<hr>
+
+<!-- <p>
+We build strong identities that define your brand and create lasting impressions.
+</p> -->
+
+
+
+</div>
+
+<div class="service">
+
+<div class="icon">
+<i class="fa-solid fa-bullhorn"></i>
+</div>
+
+<h3>Digital Marketing</h3>
+
+<hr>
+
+<!-- <p>
+We build strong identities that define your brand and create lasting impressions.
+</p> -->
+
+
+
+</div>
+
+<div class="service">
+
+<div class="icon">
+<i class="fa-solid fa-video"></i>
+</div>
+
+<h3>Video Production</h3>
+
+<hr>
+
+<!-- <p>
+We build strong identities that define your brand and create lasting impressions.
+</p> -->
+
+</div>
+
+<div class="service">
+
+<div class="icon">
+<i class="fa-solid fa-chalkboard"></i>
+</div>
+
+<h3>Outdoor Advertising</h3>
+
+<hr>
+
+<!-- <p>
+We build strong identities that define your brand and create lasting impressions.
+</p> -->
+
+
+
+</div>
+
+<div class="service">
+
+<div class="icon">
+<i class="fa-solid fa-clapperboard"></i>
+</div>
+
+<h3>Commercials</h3>
+
+<hr>
+
+<!-- <p>
+We build strong identities that define your brand and create lasting impressions.
+</p> -->
+
+</div>
+</div>
+</div>
+</div>
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+    document.querySelector(".menu-toggle").classList.toggle("active");
+}  
+</script>
+
+</body>
+</html>

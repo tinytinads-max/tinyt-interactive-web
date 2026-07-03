@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ad Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#aaabaf;
+   font-family: 'Mulish', sans-serif;
+    overflow-x:hidden;
+}
+
+/* MENU ICON */
+
+.menu-toggle{
+    position:fixed;
+    top:30px;
+    left:30px;
+    z-index:1001;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#fff;
+    margin:6px 0;
+    transition:.4s;
+}
+
+/* FULL WIDTH MENU */
+
+.menu{
+    position:fixed;
+    top:-100%;
+    left:0;
+    width:100%;
+    background:#2f2f2f;
+    transition:.5s;
+    z-index:1000;
+}
+
+.menu.active{
+    top:0;
+}
+
+.menu ul{
+    list-style:none;
+    text-align:center;
+}
+
+/* .menu ul li{
+    border-bottom:1px solid rgba(255,255,255,.1);
+} */
+
+/* .menu ul li a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:22px;
+    font-size:45px;
+    letter-spacing:1px;
+    transition:.3s;
+} */
+/* .menu ul li a:hover{
+    background:#444;
+} */
+
+/* CENTER AREA */
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+/* LOGO */
+
+.logo{
+    width:280px;
+    animation:logoFloat 4s ease-in-out infinite;
+}
+
+.logo img{
+    width:100%;
+    display:block;
+}
+
+/* STAR */
+
+.star{
+    font-size:80px;
+    color:#333;
+    animation:pulse 2s infinite;
+}
+
+/* TEXT */
+
+.content{
+    color:#333;
+}
+
+/* .content p{
+    font-size:35px;
+    font-weight:700;
+} */
+
+.content p{
+    font-size:30px;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right:2px solid #333;
+    width:0;
+    animation:
+    typing 4s steps(22,end) forwards,
+    blink .8s infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes logoFloat{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+@keyframes pulse{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+@keyframes typing{
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.logo-area{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo{
+    width:180px;
+}
+
+.star{
+    font-size:55px;
+}
+
+.content h2{
+    font-size:32px;
+}
+
+.content p{
+    font-size:18px;
+}
+}
+/* dropdown menu */
+.menu{
+    position:fixed;
+    top:-100vh;
+    left:0;
+    width:100%;
+    height:100vh;    
+    background:#2f2f2f;
+    transition:.5s;
+    z-index:1000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.menu.active{
+    top:0;
+}
+
+.menu ul{
+    list-style:none;
+    width:100%;
+    text-align:center;
+}
+
+/* .menu ul li{
+    border-bottom:1px solid rgba(255,255,255,.15);
+} */
+
+.menu ul li a{
+    display:block;
+    padding:23px;
+    color:#fff;
+    text-decoration:none;
+    font-size:45px;
+    font-weight:bold;
+    letter-spacing:2px;
+    transition:.3s;
+
+}
+
+ .menu ul li a:hover{
+    color: #999;
+    transform: translateX(10px);
+} 
+/* 
+.dropdown a:hover{
+    color: #999;
+    transform: translateX(10px);
+} */
+
+.menu-toggle.active span:nth-child(1){
+    transform:rotate(45deg) translate(6px,6px);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:rotate(-45deg) translate(7px,-7px);
+}
+.menu-toggle span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#000;
+    margin:6px 0;
+    transition:.4s;
+}
+
+.menu-toggle.active span{
+    background:#fff;
+}
+/* dropdown menu */
+
+/* Black Curtain Animation */
+.curtain{
+    position: fixed;
+    inset: 0;
+    background: #0f0f0fd3;
+    z-index: 99999;
+    animation: openCurtain 1s ease-in-out forwards;
+}
+
+@keyframes openCurtain{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+/* Black Curtain Animation */
+
+</style>
+</head>
+
+<body>
+    <div class="curtain">
+
+    </div>
+
+<!-- MENU BUTTON -->
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- FULL WIDTH MENU -->
+
+<nav class="menu" id="menu">
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="./about-page.html">ABOUT US</a></li>
+        <li><a href="./service.html">SERVICES</a></li>
+        <li><a href="#">OUR WORK</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="logo-area">
+
+        <div class="logo">
+            <img src="IMAGES/Logo.png" alt="Logo">
+        </div>
+
+        <div class="content">
+            <p><b>Ad Agency</b> Nothing More ;)</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+
+
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+    document.querySelector(".menu-toggle").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>
